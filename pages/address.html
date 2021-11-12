@@ -14,49 +14,52 @@
         <span class="address-text">ADDRESS</span><br>
         <span class="address-text book">BOOK</span>
       </div>
+    </div>
+  </header>
+  <div class="form-content">
+    <form class="form" action="#" onsubmit="save()">
+      <div class="form-head" >PERSON ADDRESS FORM</div>
+      <div class="row-content">
+        <label class="label text" for="name">Full Name</label>
+        <input class="input" type="text" id="name" name="name" required>
+        <error-output class="text-error" for="text"></error-output>
       </div>
-      </header>
-      <div class="form-content">
-        <form action="#" class="form" onreset="resetForm()" onsubmit="save()">
-            <div class="form-head">
-                <div class="form-head-text">Person Address Form</div>
-                    <img class="form-head-image" src="../assets/cancel.jpeg" alt="logo"> </a>
-            </div>
-                    <div class="row-content">
-                      <label class="label text" for="name">Full Name</label>
-                      <input class="input" type="text" id="name" name="name" required>
-                      <error-output class="text-error" for="text"></error-output>
-                    </div>
-                    <div class="row-content">
-                      <label class="label text" for="phone">Phone Number</label>
-                      <input class="input" type="text" id="phone" name="phone" required>
-                      <error-output class="phone-error" for="phone"></error-output>
-                    </div>	
-                    <div class="row-content">
-                      <label class="label text" for="address">Address</label>
-                      <textarea id="notes" class="input" name="address" style="height: 100px;"></textarea>
-                    </div>
-                    <div class="row-content">
-                      <div class="row-33">
-                        <label class="label drop" for="city">City</label>
-                        <select id="city" name="city">
-                          <option value="" selected="selected">Select City</option>
-                        </select>
-                      </div>
-                      <div class="row-33">
-                        <label class="label drop" for="state">State</label>
-                        <select id="state" name="state">
-                          <option value="" selected = "selected">Select State</option>
-                        </select>
-                      </div>
-                      <div class="row-33">
-                        <label class="label text" for="zipCode">Zip Code</label>
-                        <input class="input" type="text" id="zipCode" name="zipCode" required>
-                      </div>
-                    </div>
-        </form>
+      <div class="row-content">
+        <label class="label text" for="phone">Phone Number</label>
+        <input class="input" type="text" id="phone" name="phone" required>
+        <error-output class="phone-error" for="phone"></error-output>
+      </div>	
+      <div class="row-content">
+        <label class="label text" for="address">Address</label>
+        <textarea id="notes" class="input" name="address" style="height: 100px;"></textarea>
       </div>
-      <script src="../js/cityState.js"></script>
+      <div class="row-content">
+        <div class="row-33">
+          <label class="label drop" for="city">City</label>
+          <select id="city" name="city">
+            <option value="" selected="selected">Select City</option>
+          </select>
+        </div>
+        <div class="row-33">
+          <label class="label drop" for="state">State</label>
+          <select id="state" name="state">
+            <option value="" selected = "selected">Select State</option>
+          </select>
+        </div>
+        <div class="row-33">
+          <label class="label text" for="zipCode">Zip Code</label>
+          <input class="input" type="text" id="zipCode" name="zipCode" required>
+        </div>
+      </div>
+      <div class="row-content">
+        <div class="button-content">
+          <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+          <button type="reset" class="resetButton button">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div> <!-- form-content -->
+  <script src="../js/cityState.js"></script>
   <script src="../js/address.js"></script>
   <script src="../js/addressData.js"></script>
 </body>
